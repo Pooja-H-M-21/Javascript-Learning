@@ -1,1 +1,33 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Like Counter</title>
+</head>
+<body>
+    <h2>Like Counter</h2>
+
+    <button onclick="addLike()">Like</button>
+    <button onclick="removeLike()">Unlike</button>
+    <button onclick="showLikes()">Show Likes</button>
+
+    <script>
+        let likes = 0;
+
+        function addLike() {
+            likes++;
+            console.log("Likes: " + likes);
+        }
+
+        function removeLike() {
+            likes--;
+            console.log("Likes: " + likes);
+        }
+
+        function showLikes() {
+            console.log("Total Likes: " + likes);
+        }
+    </script>
+</body>
+</html>
+
