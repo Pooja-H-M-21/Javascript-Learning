@@ -1,40 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cart quantity</title>
+  <title>Cart Quantity</title>
 </head>
-<h>Cart Quantity <br> <br> </h>
+
 <body>
-  <button onclick="show(Quantity)">
-      Show Quantity
-    </button>
-    <button onclick="add(1)">
-      Add to Cart
-    </button>
-    <button onclick="add(2)">
-      +2
-    </button>
-    <button onclick="add(3)">
-      +3
-    </button>
-    <button onclick="reset(Quantity)">
-      Reset Cart
-    </button>
+  <h2>Cart Quantity</h2>
+
+  <button onclick="show()">
+    Show Quantity
+  </button>
+
+  <button onclick="add(1)">
+    Add to Cart
+  </button>
+
+  <button onclick="add(2)">
+    +2
+  </button>
+
+  <button onclick="add(3)">
+    +3
+  </button>
+
+  <button onclick="reset()">
+    Reset Cart
+  </button>
+
   <script>
     let Quantity = 0;
-    function show(Quantity) {
-      console.log("Cart Quantity:" + Quantity);
+
+    function show() {
+      console.log("Cart Quantity: " + Quantity);
     }
-    function add(Quantity) {
-      Quantity+=1;
-      console.log("Cart Quantity:" + Quantity);
+
+    function add(value) {
+      Quantity += value;
+      console.log("Cart Quantity: " + Quantity);
     }
-    function reset(Quantity){
+
+    function reset() {
       console.log("Cart was reset.");
       Quantity = 0;
-      console.log("Cart Quantity:" + Quantity);
+      console.log("Cart Quantity: " + Quantity);
     }
   </script>
 </body>
